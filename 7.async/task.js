@@ -17,6 +17,7 @@ class AlarmClock {
 
     if (hasAlarm) {
       console.warn('Уже присутствует звонок на это же время');
+      return;
     }
 
     this.alarmCollection.push({
@@ -41,7 +42,7 @@ class AlarmClock {
   }
 
   start() {
-    if (this.intervalId) {
+    if (this.intervalId !== null) {
       return;
     }
 
