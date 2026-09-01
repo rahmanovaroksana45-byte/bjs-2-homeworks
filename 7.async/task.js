@@ -15,7 +15,7 @@ class AlarmClock {
       (alarm) => alarm.time === time
     );
 
-    iif (hasAlarm) {
+    if (hasAlarm) {
   console.warn('Уже присутствует звонок на это же время');
 }
 
